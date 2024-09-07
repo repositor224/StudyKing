@@ -1,9 +1,6 @@
-# Flask Web App Tutorial
+This is the project for submitting the United Hacks V3.
 
-## Setup & Installation
-
-Make sure you have the latest version of Python installed.
-
+To download it, use the following command
 ```bash
 git clone <repo-url>
 ```
@@ -12,12 +9,10 @@ git clone <repo-url>
 pip install -r requirements.txt
 ```
 
-## Running The App
+## Running the App
 
+To run the app, using the following command on CMD:
 ```bash
 python main.py
 ```
-
-## Viewing The App
-
-Go to `http://127.0.0.1:5000`
+"# StudyKing" 

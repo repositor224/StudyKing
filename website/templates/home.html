@@ -1,6 +1,6 @@
 {% extends "base.html" %} {% block title %}Home{% endblock %} {% block content
 %}
-<h1 align="center">Notes</h1>
+<h1 align="center">Input your text here for summarization</h1>
 <ul class="list-group list-group-flush" id="notes">
   {% for note in user.notes %}
   <li class="list-group-item">
@@ -12,10 +12,19 @@
   {% endfor %}
 </ul>
 <form method="POST">
-  <textarea name="note" id="note" class="form-control"></textarea>
+  <textarea name="note" placeholder = "Text Here" id="note" class="form-control"></textarea>
   <br />
   <div align="center">
     <button type="submit" class="btn btn-primary">Add Note</button>
   </div>
 </form>
+<h1 align = "center">Or Upload a file below</h1>
+<form action = "/success" method = "post" enctype="multipart/form-data">   
+  <div align = "center">
+    <input type="file" name="file" id = "Kazusa"/>   
+    <input type = "submit" value="Upload" id = "Kazusa">    
+  </div>
+<h2 align = "center">To use this software, put your text from a textbook into the textbox to generate bullet points! </h2>
+
+</form>   
 {% endblock %}

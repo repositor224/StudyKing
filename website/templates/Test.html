@@ -1,0 +1,16 @@
+{% extends "base.html" %} {% block title %}Test{% endblock %} {% block
+    content %}
+<h1 align="center">Test Your Understanding</h1>
+<ul class="list-group list-group-flush" id="notes">
+    {% for note in user.notes %}
+    <li class="list-group-item">
+      {{ note.data }}
+    </li>
+    {% endfor %}
+</ul>
+<form method="POST">
+    <div align="center">
+      <button type="Generate Problem" class="btn btn-primary">Remove a few words in the Notes</button>
+    </div>
+</form>
+  {% endblock %}
