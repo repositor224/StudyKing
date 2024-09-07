@@ -16,3 +16,4 @@ To run the app, using the following command on CMD:
 python main.py
 ```
 "# StudyKing" 
+"# StudyKing" 
