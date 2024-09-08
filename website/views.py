@@ -6,6 +6,13 @@ import json
 import os
 from flask import Flask, flash, request, redirect, url_for
 from werkzeug.utils import secure_filename
+import google.generativeai as genai
+# from fpdf import FPDF
+
+API_KEY = 'YOUR_API_KEY'
+MODEL = genai.GenerativeModel("gemini-1.5-flash")
+genai.configure(api_key=API_KEY)
+
 
 views = Blueprint('views', __name__)
 
