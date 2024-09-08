@@ -28,6 +28,14 @@ def home():
             new_note = Note(data=note, user_id=current_user.id)  #providing the schema for the note 
             db.session.add(new_note) #adding the note to the database 
             #Input the Gemini Program Here
+
+                        
+            #Input the Gemini Program Here
+            def summarize():
+                prompt = MODEL.generate_content(f"Summarize the following texts in bullet point notes: {note}")
+                summary = prompt.text
+                return render_template('summary.html', summary=summary)
+            
             db.session.commit()
             flash('Generated Text Are Below:', category='success')
 
