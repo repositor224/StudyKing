@@ -15,5 +15,3 @@ To run the app, using the following command on CMD:
 ```bash
 python main.py
 ```
-"# StudyKing" 
-"# StudyKing" 
